@@ -6,7 +6,7 @@ from project.api.models import User
 users_blueprint = Blueprint('users', __name__)
 
 
-@users_blueprint.route('/users', methods=['GET'])
+@users_blueprint.route('/', methods=['GET'])
 def get_all_users():
     response_object = {
         'status': 'success',
